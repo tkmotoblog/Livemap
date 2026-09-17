@@ -19,9 +19,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://jitpack.io") } // Nandito na ang JitPack repository
     }
 }
 
 rootProject.name = "Livemap"
 include(":app")
- 
