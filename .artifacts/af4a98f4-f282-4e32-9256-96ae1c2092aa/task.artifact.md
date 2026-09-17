@@ -1,0 +1,3 @@
+- `[x]` Update `app/build.gradle.kts` to application plugin
+- `[x]` Add `applicationId` to `defaultConfig`
+- `[x]` Sync Gradle and verify
