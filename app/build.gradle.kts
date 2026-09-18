@@ -39,14 +39,18 @@ android {
     }
 }
 
+base {
+    archivesName.set("tkmotoblog")
+}
+
 afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("release") {
                 from(components["release"])
-                groupId = "com.github.TKNetwork"
-                artifactId = "livemap"
-                version = "1.0"
+                groupId = "com.github.tkmotoblog"
+                artifactId = "Livemap"
+                version = "1.0.2"
             }
         }
     }
