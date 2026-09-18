@@ -50,7 +50,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.tkmotoblog"
                 artifactId = "Livemap"
-                version = "1.0.2"
+                version = "1.0.6"
             }
         }
     }
