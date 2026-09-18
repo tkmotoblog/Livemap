@@ -35,6 +35,25 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.TKNetwork"
+                artifactId = "livemap"
+                version = "1.0"
+            }
+        }
+    }
 }
 
 dependencies {

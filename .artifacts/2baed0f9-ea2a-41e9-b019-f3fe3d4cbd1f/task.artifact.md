@@ -1,0 +1,3 @@
+- [x] Create `jitpack.yml` at the root directory with Java 17 configuration.
+- [x] Configure `maven-publish` block in `app/build.gradle.kts`.
+- [x] Run a test build or sync to ensure syntax is valid.
