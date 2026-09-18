@@ -15,7 +15,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = true
+            isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -39,10 +39,6 @@ android {
     }
 }
 
-base {
-    archivesName.set("tkmotoblog")
-}
-
 afterEvaluate {
     publishing {
         publications {
@@ -50,7 +46,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.tkmotoblog"
                 artifactId = "Livemap"
-                version = "1.0.6"
+                version = "1.0.2"
             }
         }
     }
