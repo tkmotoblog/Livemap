@@ -1,3 +1,5 @@
-- [x] Create `jitpack.yml` at the root directory with Java 17 configuration.
-- [x] Configure `maven-publish` block in `app/build.gradle.kts`.
-- [x] Run a test build or sync to ensure syntax is valid.
+- [x] Add `android-library` plugin definition to `gradle/libs.versions.toml`.
+- [x] Update root `build.gradle.kts` to declare the library plugin.
+- [x] Convert `app/build.gradle.kts` from application to library and remove `applicationId`.
+- [x] Clean up `AndroidManifest.xml` launcher and application attributes for library compatibility.
+- [x] Perform a gradle sync and build to verify.

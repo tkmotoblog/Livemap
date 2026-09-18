@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     `maven-publish`
 }
 
@@ -8,11 +8,7 @@ android {
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.tknetwork.livemap"
         minSdk = 24
-        targetSdk = 37
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
